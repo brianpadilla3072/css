@@ -1,0 +1,29 @@
+@keyframes pulse {
+    0% {
+        transform: scale(0.15);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blueviolet;
+
+}
+.loader {
+width: 64px;
+height: 64px;
+border-radius: 50%;
+background: #fff;
+animation: pulse 0.85s infinite linear;
+}

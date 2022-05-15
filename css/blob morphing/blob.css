@@ -1,0 +1,36 @@
+@keyframes morph {
+    0%,100%{
+        border-radius: 
+        42% 56% 72% 28% / 42% 42% 56% 46%;
+    }
+    33%{
+        border-radius:
+        72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    65%{
+        border-radius:
+        100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
+.blob{
+    overflow: hidden;
+    width: 16rem;
+    height: 16rem;
+    border-radius:
+     42% 56% 73% 28% / 42% 42% 56% 48%;
+    background: #8e44fd94
+     url("http://instagram.fbhi1-1.fna.fbcdn.net/v/t51.2885-19/240717451_663106278000681_6617002414074334947_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fbhi1-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=uE4VOt6iLFkAX-HIgLF&edm=ALQROFkBAAAA&ccb=7-4&oh=00_AT8Uz-wSRzM-PWhDPNcfY65Gs5Hj9TuYUsLSvtuYNY72Mg&oe=627FDD45&_nc_sid=30a2ef");
+    background-size: cover;
+    background-position: center;
+
+    animation: morph 3.75s linear infinite;
+
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blueviolet;
+
+}
